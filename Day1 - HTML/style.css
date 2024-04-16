@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1em;
+    background-color: #eee;
+}
+
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 3px 5px #111;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    object-fit: cover;
+    box-shadow: 0 0 5px 0 #988;
+    padding: 1.2em 2em;
+    width: 100px;
+    height: 500px;
+    border-radius: 4em;
+
+    h2 {
+        visibility: hidden;
+    }
+}
+
+.active {
+    width: 600px;
+    transition: 2s slide ease;
+    height: 500px;
+    border-radius: 4em;
+
+    h2 {
+        visibility: visible;
+    }
+}
+
+@keyframes slide {
+    to {
+        width: 100px;
+    }
+
+    from {
+        width: 600px;
+    }
+}
