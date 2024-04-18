@@ -1,0 +1,12 @@
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+}

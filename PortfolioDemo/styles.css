@@ -1,0 +1,87 @@
+:root {
+    --bg-gray: #282828;
+    --second-gray: #353535;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background: rgb(34, 193, 195); */
+    /* background: linear-gradient(135deg, rgba(34, 193, 195, 1) 23%, rgba(253, 247, 45, 1) 100%); */
+}
+
+#menu-container {
+    transition: background 0.5s ease-in;
+    position: fixed;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+}
+
+#menu-container a {
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-picture {
+    width: 300px;
+    border-radius: 35% 10%;
+    rotate: -15deg;
+}
+
+.info-profile {
+    margin: 3em;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas: 'image info' 'image info' 'image info';
+}
+
+.info-profile img {
+    grid-area: image;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+    grid-area: info;
+}
+
+.info-container h2 {
+    font-size: 3em;
+}
+
+.info-container h3 {
+    font-size: 2em;
+}
+
+.info-container p {
+    font-size: 1.1em;
+}
+
+.container {
+    position: absolute;
+    margin-top: 4em;
+    padding: 2em;
+}
