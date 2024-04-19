@@ -8,124 +8,128 @@
   </head>
   <body>
     <main>
-      <header>
-        <h1>Recetas de comida</h1>
-      </header>
+      <div id="header">
+        <header>
+          <h1>Recetas de comida</h1>
+        </header>
 
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="#breakfast">Desayuno</a>
-        <a href="#lunch">Comida</a>
-        <a href="#dinner">Cena</a>
-        <a href="https://www.google.com" target="_blank">Contacto</a>
-      </nav>
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#breakfast">Desayuno</a>
+          <a href="#lunch">Comida</a>
+          <a href="#dinner">Cena</a>
+          <a href="https://www.google.com" target="_blank">Contacto</a>
+        </nav>
+      </div>
 
-      <section id="recipes">
-        <article id="lunch" class="recipe-container">
-          <h2><mark>Hamburguesa BBQ</mark></h2>
-          <img src="resources/burger.jpeg" alt="imagen del platillo" />
+      <div class="container">
+        <section id="recipes">
+          <article id="lunch" class="recipe-container">
+            <h2><mark>Hamburguesa BBQ</mark></h2>
+            <img src="resources/burger.jpeg" alt="imagen del platillo" />
+            <p>
+              ¡Descubre el sabor inigualable de nuestra Hamburguesa BBQ! Esta
+              receta es
+              <em
+                >la opción perfecta para compartir en familia en cualquier
+                momento del día.</em
+              >
+              ¡Anímate a prepararla y sorprende a tus seres queridos con este
+              festín de sabores ahumados!
+            </p>
+            <div id="autor-data">
+              <span>Autor: <b>Ing. Christian</b></span>
+              <span>
+                Dificultad:
+                <strong>Fácil</strong>
+              </span>
+              <span>
+                Tiempo:
+                <strong>1 hr</strong>
+              </span>
+              <span> Porciones:<strong>4 personas</strong> </span>
+            </div>
+            <div id="ingredients">
+              <h3>Ingredientes</h3>
+              <ul>
+                <li>4 piezas de pan para hamburguesas</li>
+                <li>4 piezas de carne para hamburguesas</li>
+                <li>Salsa BBQ</li>
+                <li>Mayonesa</li>
+                <li>Aguacate</li>
+                <li>Jitomate</li>
+                <li>Cebolla</li>
+                <li>Tocino</li>
+                <li>Mostaza</li>
+                <li>Pimienta</li>
+              </ul>
+            </div>
+            <div id="steps">
+              <h3>A cocinar</h3>
+              <p>
+                Para realizar estas hamburguesas sigue los siguientes pasos:
+              </p>
+              <ol>
+                <li>
+                  Se embarra la mayonesa, la mostaza y el aguacate al pan de la
+                  hamburguesa
+                </li>
+                <li>Se prepara y cocina la carne y tocino</li>
+                <li>Se revana la verdura (lechuga, jitomate y cebolla)</li>
+                <li>Se baña el interior de la hamburguesa en salsa BBQ</li>
+                <li>Se sirve la hamburguesa con una coca-cola bien helada</li>
+              </ol>
+              <p>De esta manera puedes disfrutar tu hamburguesa BBQ</p>
+            </div>
+            <div id="tip">
+              <img src="resources/lightbulb-line.svg" alt="imagen foco">
+              <h3>Tip culinario</h3>
+              <p>
+                Puedes agregar pepinillos y queso americano al armar la
+                hamburguesa.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section id="promotions">
+          <h2>Recetario la ruta de la garnacha</h2>
+          <p>Reserva tu recetario desde:</p>
+          <h3>1<sup>a</sup> Edición</h3>
+          <p><s>$399.99</s> <strong>¡$299.99!</strong></p>
+          <h3>2<sup>a</sup> Edición</h3>
+          <p><s>$499.99</s> <strong>¡$399.99!</strong></p>
+          <h3>3<sup>a</sup> Edición</h3>
+          <p><s>$599.99</s> <strong>¡$499.99!</strong></p>
           <p>
-            Vamos a preparar una rica y deliciosa hamburguesa BBQ que sera una
-            <em>muy buena opción para compartir en familia a cualquier hora del dia.</em>
+            <small
+              >*Es necesario contar con una cuenta antes de realizar la
+              compra</small
+            >
           </p>
-          <div>Autor: <b>Inge. Christian</b></div>
-          <div>
-            Dificultad:
-            <span><strong>Fácil</strong></span>
-          </div>
-          <div>
-            Tiempo de preparación:
-            <span><strong>1 hr</strong></span>
-          </div>
-          <div>
-            Porciones:
-            <span><strong>4 personas</strong></span>
-          </div>
-          <h3>Ingredientes</h3>
-          <ul>
-            <li>4 piezas de pan para hamburguesas</li>
-            <li>4 piezas de carne para hamburguesas</li>
-            <li>Queso</li>
-            <li>Salsa BBQ</li>
-            <li>Mayonesa</li>
-            <li>Aguacate</li>
-            <li>Jitomate</li>
-            <li>Cebolla</li>
-            <li>Tocino</li>
-            <li>Mostaza</li>
-            <li>Pimienta</li>
-          </ul>
-          <h3>A cocinar</h3>
-          <p>Para realizar estas hamburguesas sigue los siguientes pasos:</p>
-          <ol>
-            <li>
-              Se embarra la mayonesa, la mostaza y el aguacate al pan de la
-              hamburguesa
-            </li>
-            <li>Se prepara y cocina la carne y tocino</li>
-            <li>Se revana la verdura (lechuga, jitomate y cebolla)</li>
-            <li>Se baña el interior de la hamburguesa en salsa BBQ</li>
-            <li>Se sirve la hamburguesa con una coca-cola bien helada</li>
-          </ol>
-          <p>De esta manera puedes disfrutar tu hamburguesa BBQ</p>
-          <h3>Tip culinario</h3>
-          <p>
-            Puedes agregar pepinillos y queso americano al armar la hamburguesa.
-          </p>
-        </article>
-
-        <article id="breakfast" class="recipe-container">
-          <h2><mark>Hot-Cakes</mark></h2>
-          <img src="resources/hotcakes.jpeg" alt="imagen del platillo" />
-          <p>
-            Vamos a preparar unos ricos hot-cakes con nutella y jarabe de Mapple
-          </p>
-          <div>Autor: <b>None</b></div>
-          <div>Dificultad: <span>Medio</span></div>
-          <div>Tiempo de preparación: <span>1 hr</span></div>
-          <div>Porciones: <span>6 Personas</span></div>
-          <h3>Ingredientes</h3>
-          <ul>
-            <li>Harina para hot-cakes</li>
-            <li>Huevos</li>
-            <li>Leche</li>
-            <li>Nutella</li>
-            <li>Jarabe de Mapple</li>
-            <li>Mantequilla</li>
-          </ul>
-          <h3>A cocinar</h3>
-          <p>Para realizar estas hamburguesas sigue los siguientes pasos:</p>
-          <ol>
-            <li>Mezclar la harina con huevos y leche</li>
-            <li>Batir hasta obtener una mezcla homogenea</li>
-            <li>Prepalentar un sarten para la mantequilla</li>
-            <li>Derretir mantequilla en el sarten</li>
-            <li>Colocar un poco de masa en el sarten y dejar cocinar</li>
-            <li>Servir los hot-cakes con nutella y jarabe de mapple</li>
-          </ol>
-          <p>De esta manera puedes disfrutar unos ricos hot-cakes por la mañana cada dia.</p>
-          <h3>Tip culinario</h3>
-          <p>
-            Puedes agregar fresas y arandanos para agregarle un extra de sabor.
-          </p>
-        </article>
-      </section>
-      <section>
-        <h2>Recetario la ruta de la garnacha</h2>
-        <p>Reserva tu recetario desde: <s>$499.99</s> <strong>¡$399.99!</strong></p>
-
-        <h3>Testimonios</h3>
-        <article>
-          <h4>Robegrill</h4>
-          <img src="https://www.youtube.com/@Robegrill" alt="foto-robe">
-          <p><q>"Las mejores recetas de todo México. ¡Que chille!"</q></p>
-        </article>
-        <article>
-          <h4>Oscar Meza</h4>
-          <img src="#" alt="foto-oscar">
-          <p><q cite="https://www.youtube.com/@lacapitalcocina">"Hace falta una picaña con adobo recien hecho. Le falta pimienta negra recien molida a la hamburguesa."</q></p>
-        </article>
-      </section>
+        </section>
+        <section id="comments">
+          <h2>Reseñas</h2>
+          <article class="reviews">
+            <h4>Robegrill</h4>
+            <img src="resources/robe.jpg" alt="foto-robe" />
+            <p>
+              <q cite="https://www.youtube.com/@Robegrill"
+                >"Las mejores recetas de todo México. ¡Que chille!"</q
+              >
+            </p>
+          </article>
+          <article class="reviews">
+            <h4>Oscar Meza</h4>
+            <img src="resources/oscar.jpg" alt="foto-oscar" />
+            <p>
+              <q cite="https://www.youtube.com/@lacapitalcocina">
+                "Hace falta una picaña con adobo recien hecho. Le falta pimienta
+                negra recien molida a la hamburguesa."</q
+              >
+            </p>
+          </article>
+        </section>
+      </div>
     </main>
   </body>
 </html>
