@@ -11,10 +11,16 @@ body {
 
 #header {
     padding: 0.5em 0;
+    background: #f2cfb6;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .container {
-    max-width: 800px;
+    position: relative;
+    top: 5em;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -28,19 +34,14 @@ body {
 nav a {
     text-decoration: none;
     padding: 5px 10px;
+    color: black;
+    font-size: 1em;
 }
 
 #header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.reviews img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 #recipes {
@@ -66,7 +67,7 @@ mark {
     display: grid;
     grid-template-columns: 1fr 0.3fr;
     grid-template-areas:
-        'title image'
+        'title title'
         'data image'
         'description description'
         'ingredients ingredients'
@@ -76,6 +77,7 @@ mark {
 
 .recipe-container h2 {
     grid-area: title;
+    margin-bottom: 10px;
     text-align: center;
     align-content: center;
 }
@@ -127,12 +129,14 @@ mark {
         border-radius: 20px;
         box-shadow: 0 0 5px 0 black;
         padding: 5px 10px;
+        text-align: center;
     }
 }
 
 #steps {
     grid-area: steps;
     padding: 1em;
+
     ol {
         padding: 2em;
     }
@@ -140,10 +144,12 @@ mark {
     h3 {
         background: #f2cfb6;
         border-radius: 20px;
+        text-align: center;
         box-shadow: 0 0 5px 0 black;
         padding: 5px 10px;
     }
-    p{
+
+    p {
         padding: 1em 1em 0;
     }
 }
@@ -157,17 +163,77 @@ mark {
     box-shadow: 0 0 5px 0 black;
     grid-template-columns: 0.1fr 1fr;
     grid-template-areas: 'tip-image tip-title' 'tip-image tip-desc';
-    h3{
+
+    h3 {
         grid-area: tip-title;
     }
-    p{
+
+    p {
         grid-area: tip-desc;
     }
-    img{
+
+    img {
         grid-area: tip-image;
         width: 40px;
         height: 40px;
         align-content: center;
         justify-self: center;
     }
+}
+
+#comments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'title title' 'comments1 comments2';
+
+    h2 {
+        grid-area: title;
+        text-align: center;
+        background: linear-gradient(45deg, #f2cfb6, #d86a3b);
+        border-radius: 30px;
+        padding: 5px;
+        box-shadow: 0 0 5px 0 black;
+    }
+
+    column-gap: 5px;
+    row-gap: 15px;
+    padding-bottom: 10px;
+}
+
+.reviews {
+    display: grid;
+    background: #ddd;
+    border-radius: 20px;
+    padding: 5px;
+    align-items: center;
+    box-shadow: 0 0 5px 0 black;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-areas: 'tip-image tip-title' 'tip-image tip-desc';
+
+    h3 {
+        grid-area: tip-title;
+    }
+
+    p {
+        grid-area: tip-desc;
+    }
+
+    img {
+        grid-area: tip-image;
+        align-content: center;
+        justify-self: center;
+        margin-right: 5px;
+        width: 80px;
+        height: 80px;
+        border-radius: 15px 5px 5px 15px;
+        object-fit: cover;
+    }
+}
+
+.reviews:nth-child(0) {
+    grid-area: comments1;
+}
+
+.reviews:nth-child(1) {
+    grid-area: comments2;
 }
