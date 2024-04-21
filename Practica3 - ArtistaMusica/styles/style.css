@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("/resources/fonts/Montserrat-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +22,7 @@
     position: absolute;
     width: 100%;
     z-index: 999;
-    padding: 0.2em 1em 0.5em 0;
+    padding: 0.2em 0 0.5em 3em;
 
     nav {
         display: flex;
@@ -154,6 +165,11 @@
     }
 }
 
+.song-container:hover {
+    scale: 1.05;
+    transition: 0.4s ease;
+}
+
 #events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -282,13 +298,4 @@ footer {
     img {
         width: 32px;
     }
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src:
-        local("Montserrat"),
-        url("/resources/fonts/Montserrat-VariableFont_wght.ttf") format("truetype"),
 }
