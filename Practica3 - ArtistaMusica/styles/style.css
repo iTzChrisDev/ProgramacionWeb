@@ -51,7 +51,7 @@
 .info-container {
     display: grid;
     grid-template-columns: 3fr;
-    grid-template-rows: 1.2fr 0.2fr 0.2fr 0.8fr;
+    grid-template-rows: 1.5fr 0.2fr 0.2fr 1.5fr;
     grid-template-areas: 'title' 'one' 'two' 'three';
     row-gap: 1em;
     height: 100vh;
@@ -59,7 +59,7 @@
     h1 {
         grid-area: title;
         font-family: Impact, sans-serif;
-        font-size: 8em;
+        font-size: 5em;
         font-weight: 100;
         color: white;
         align-self: flex-end;
@@ -90,6 +90,7 @@
     img {
         grid-area: album-photo;
         border-radius: 1em;
+        box-shadow: 0 0 10px #222;
     }
 
     h2 {
@@ -118,7 +119,7 @@
 
 #music {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(4, 200px);
     justify-content: center;
     padding: 5em 10em;
     gap: 1em;
@@ -233,7 +234,7 @@
         font-size: 1.2em;
         color: #222;
         background: #eee;
-        font-weight: 600;
+        font-weight: 200;
         border-radius: 0.5em;
         padding: 0.2em 0.5em;
         align-content: center;
@@ -275,7 +276,7 @@ footer {
     h2 {
         font-size: 1.5em;
         color: #eee;
-        font-weight: 900;
+        font-weight: 400;
     }
 
     img {
