@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    padding: 0.2em 1em 0.5em 0;
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 2.5em;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+}
+
+#presentation {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 'info photo';
+    padding: 0 10em;
+    background: linear-gradient(75deg, #d48526 0%, #a74e0c 60%, #801509 100%);
+
+    .info-container {
+        grid-area: info;
+    }
+
+}
+
+#presentation>#photo-one {
+    grid-area: photo;
+    padding-top: 5vh;
+    justify-self: center;
+    height: 100vh;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1.2fr 0.2fr 0.2fr 0.8fr;
+    grid-template-areas: 'title' 'one' 'two' 'three';
+    row-gap: 1em;
+    height: 100vh;
+
+    h1 {
+        grid-area: title;
+        font-family: Impact, sans-serif;
+        font-size: 8em;
+        font-weight: 100;
+        color: white;
+        align-self: flex-end;
+        text-shadow: 0 0 25px #a74e0c;
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+}
+
+.popular-song-container {
+    color: white;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    column-gap: 10px;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: 'album-photo album-title' 'album-photo album-song' 'album-photo album-year';
+
+    img {
+        grid-area: album-photo;
+        border-radius: 1em;
+    }
+
+    h2 {
+        grid-area: album-title;
+        font-family: sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        align-self: center;
+        text-shadow: 0 0 25px #a74e0c;
+    }
+
+    h3 {
+        grid-area: album-song;
+        font-size: 1.2em;
+        align-self: center;
+        text-shadow: 0 0 25px #a74e0c;
+    }
+
+    p {
+        grid-area: album-year;
+        font-size: 1em;
+        align-self: center;
+        text-shadow: 0 0 25px #a74e0c;
+    }
+}
+
+#music {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    padding: 5em 10em;
+    gap: 1em;
+    height: 100vh;
+    align-items: center;
+}
+
+.song-container {
+    background: #eee;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    gap: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 5px 0 #fff3;
+
+    img {
+        border-radius: 1em 1em 0 0;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        font-weight: 700;
+        color: #222;
+    }
+
+    span {
+        font-weight: 700;
+        color: #222;
+    }
+}
+
+#events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background: linear-gradient(45deg, #d48526 0%, #a74e0c 60%, #801509 100%);
+    height: 100vh;
+    color: #eee;
+
+    img {
+        align-self: flex-end;
+        justify-self: flex-end;
+        height: 100vh;
+    }
+}
+
+.info-events {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10em;
+    row-gap: 2em;
+    background: radial-gradient(90deg, #a74e0c, #d48526);
+
+    h2 {
+        font-family: Verdana, sans-serif;
+        font-weight: 800;
+        font-size: 5em;
+    }
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-family: Verdana, sans-serif;
+        font-weight: 600;
+        font-size: 1.7em;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 1em;
+
+        span {
+            font-weight: 900;
+            font-style: oblique;
+            font-size: 1.3em;
+        }
+    }
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 5em 10em;
+    gap: 1em;
+
+    #about-us {
+        font-size: 5em;
+        color: #eee;
+        font-family: Verdana, sans-serif;
+        font-weight: 800;
+    }
+
+    .info-bio {
+        font-size: 1.7em;
+        color: #eee;
+        font-family: sans-serif;
+        font-weight: 400;
+        align-content: flex-end;
+        padding-bottom: 0.2em;
+    }
+
+    .paragraph {
+        font-size: 1.2em;
+        color: #222;
+        background: #eee;
+        font-weight: 600;
+        border-radius: 0.5em;
+        padding: 0.2em 0.5em;
+        align-content: center;
+    }
+
+    #spotify {
+        align-self: center;
+        color: #eee;
+        font-size: 2em;
+        padding: 0.2em 0.2em;
+
+        span {
+            border-radius: 1em;
+            background: #eee;
+            padding: 0 0.2em;
+            color: rgb(28, 150, 45);
+            font-family: Verdana, sans-serif;
+            font-weight: 900;
+        }
+
+        a {
+            font-family: Verdana, sans-serif;
+            text-decoration: none;
+            color: rgb(28, 150, 45);
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #d48526 0%, #a74e0c 60%, #801509 100%);
+    padding: 0.5em 0;
+    column-gap: 2em;
+
+    h2 {
+        font-size: 1.5em;
+        color: #eee;
+        font-weight: 900;
+    }
+
+    img {
+        width: 32px;
+    }
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Montserrat"),
+        url("/resources/fonts/Montserrat-VariableFont_wght.ttf") format("truetype"),
+}

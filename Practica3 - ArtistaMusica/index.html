@@ -4,101 +4,212 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="shortcut icon" href="resources/favicon.ico">
+    <link rel="shortcut icon" href="resources/favicon.ico" />
     <title>TheWeeknd</title>
   </head>
   <body>
-    <header>
-      <img src="resources/logo.png" alt="Logo de TheWeeknd" width="80px"/>
+    <header id="nav-bar">
+      <a href="#nav-bar"><img src="resources/logo.png" alt="Logo de TheWeeknd" width="60px" /></a>
       <nav>
-        <a href="">Música</a>
-        <a href="">Eventos</a>
-        <a href="">Acerca de</a>
-        <a href="">Media</a>
-        <a href="">Store</a>
+        <a href="#music">MÚSICA</a>
+        <a href="#events">EVENTOS</a>
+        <a href="#about">ACERCA DE</a>
+        <a href="#media">MEDIA</a>
       </nav>
     </header>
     <main>
       <div id="container">
         <section id="presentation">
-          <h1>TheWeeknd</h1>
-          <img src="resources/The-Weeknd-Photo.webp" alt="Foto de TheWeeknd" />
-          <article class="popular-song-container">
-            <h2>After Hours</h2>
-            <h3>Blinding Lights</h3>
-            <p>2020</p>
-          </article>
-          <article class="popular-song-container">
-            <h2>Starboy</h2>
-            <h3>Starboy</h3>
-            <p>2016</p>
-          </article>
-          <article class="popular-song-container">
-            <h2>Beauty Behind The Madness</h2>
-            <h3>The Hills</h3>
-            <p>2015</p>
-          </article>
+          <div class="info-container">
+            <h1>THE WEEKND</h1>
+            <article class="popular-song-container one">
+              <img
+                src="resources/The_Weeknd - BlindingLights.webp"
+                alt="album After Hours"
+                width="90px"
+              />
+              <h2 lang="en">After Hours</h2>
+              <h3 lang="en">Blinding Lights</h3>
+              <p>2020</p>
+            </article>
+            <article class="popular-song-container two">
+              <img
+                src="resources/The_Weeknd - Starboy.webp"
+                alt="album Starboy"
+                width="90px"
+              />
+              <h2 lang="en">Starboy</h2>
+              <h3 lang="en">Starboy</h3>
+              <p>2016</p>
+            </article>
+            <article class="popular-song-container three">
+              <img
+                src="resources/The_Weeknd - TheHills.jpg"
+                alt="album Behind The Madness"
+                width="90px"
+              />
+              <h2 lang="en">Behind The Madness</h2>
+              <h3 lang="en">The Hills</h3>
+              <p>2015</p>
+            </article>
+          </div>
+          <img
+            id="photo-one"
+            src="resources/The-Weeknd-Photo.webp"
+            alt="Foto de TheWeeknd"
+          />
         </section>
 
-        <section id="music">
+        <section
+          id="music"
+          style="background-image: url(resources/theweeknd-bg.webp)"
+        >
           <article class="song-container">
-            <img src="resources/The_Weeknd - BlindingLights.webp" alt="Album Blinding Lights" width="300"/>
-            <h3>Blinding Lights</h3>
+            <a
+              href="https://open.spotify.com/intl-es/track/0VjIjW4GlUZAMYd2vXMi3b"
+              target="_blank"
+              ><img
+                src="resources/The_Weeknd - BlindingLights.webp"
+                alt="Album Blinding Lights"
+                width="200"
+            /></a>
+            <h3 lang="en">Blinding Lights</h3>
             <span>Synth-pop/R&B</span>
             <span>3:20</span>
           </article>
           <article class="song-container">
-            <img src="resources/The_Weeknd - Starboy.webp" alt="Album Starboy" width="300"/>
-            <h3>Starboy (feat. DaftPunk)</h3>
+            <a
+              href="https://open.spotify.com/intl-es/track/7MXVkk9YMctZqd1Srtv4MB"
+              target="_blank"
+              ><img
+                src="resources/The_Weeknd - Starboy.webp"
+                alt="Album Starboy"
+                width="200"
+            /></a>
+            <h3 lang="en">Starboy (ft. DaftPunk)</h3>
             <span>R&B/Electrónico</span>
             <span>3:50</span>
           </article>
           <article class="song-container">
-            <img src="resources/The_Weeknd - CantFeelMyFace.webp" alt="Album Beauty Behind The Madness" width="300"/>
-            <h3>Can't Feel My Face</h3>
+            <a
+              href="https://open.spotify.com/intl-es/track/22VdIZQfgXJea34mQxlt81"
+              target="_blank"
+            >
+              <img
+                src="resources/The_Weeknd - CantFeelMyFace.webp"
+                alt="Album Beauty Behind The Madness"
+                width="200"
+              />
+            </a>
+
+            <h3 lang="en">Can't Feel My Face</h3>
             <span>Pop/R&B</span>
             <span>3:33</span>
           </article>
           <article class="song-container">
-            <img src="resources/The_Weeknd - TheHills.jpg" alt="Album Beauty Behind The Madness" width="300"/>
-            <h3>The Hills</h3>
+            <a
+              href="https://open.spotify.com/intl-es/track/7fBv7CLKzipRk6EC6TWHOB"
+              target="_blank"
+            >
+              <img
+                src="resources/The_Weeknd - TheHills.jpg"
+                alt="Album Beauty Behind The Madness"
+                width="200"
+              />
+            </a>
+            <h3 lang="en">The Hills</h3>
             <span>R&B</span>
             <span>4:02</span>
           </article>
         </section>
 
         <section id="events">
-          <img src="resources/TheWeeknd-PhotoAlt.webp" alt="Foto de TheWeeknd" />
-          <h2>Eventos proximos</h2>
-          <article class="event-container">
-            <h3>Evento #1</h3>
-            <p>Lugar del evento</p>
-          </article>
-          <article class="event-container">
-            <h3>Evento #1</h3>
-            <p>Lugar del evento</p>
-          </article>
-          <article class="event-container">
-            <h3>Evento #1</h3>
-            <p>Lugar del evento</p>
-          </article>
+          <div class="info-events">
+            <h2>Eventos proximos</h2>
+            <article class="event-container">
+              <h3 lang="en">After Hours Tour</h3>
+              <p>Wembley Stadium. <span>Sep. 2024</span></p>
+            </article>
+            <article class="event-container">
+              <h3 lang="en">After Hours Tour</h3>
+              <p>Estadio BBVA. <span>Oct. 2024</span></p>
+            </article>
+            <article class="event-container">
+              <h3 lang="en">After Hours Tour</h3>
+              <p>Estadio Akron. <span>Dic. 2024</span></p>
+            </article>
+          </div>
+          <img
+            src="resources/TheWeeknd-PhotoAlt.webp"
+            alt="Foto de TheWeeknd"
+          />
         </section>
 
-        <section id="about">
-          <h2>TheWeeknd</h2>
-          <h3>Biografia</h3>
-          <p>informacion de la biografia TODO</p>
-          <h3>Logros Musicales</h3>
-          <p>Logros TODO</p>
-          <h4>Reproducciones en Spotify: <span>000,000</span></h4>
+        <section
+          id="about"
+          style="background: url(resources/theweeknd-bg.webp)"
+        >
+          <h2 id="about-us">TheWeeknd</h2>
+          <div id="bio">
+            <h3 class="info-bio">Biografia</h3>
+            <p class="paragraph">
+              The Weeknd, también conocido como Abel Tesfaye, es un ícono de la
+              música contemporánea reconocido por su innovador sonido y su
+              distintiva voz seductora. Nacido el 16 de febrero de 1990 en
+              Toronto, Canadá, Tesfaye irrumpió en la escena musical en 2010 con
+              su misterioso debut en línea, cautivando a los oyentes con sus
+              letras emotivas y su estilo único. Desde entonces, The Weeknd ha
+              dejado una marca indeleble en la industria musical, fusionando
+              géneros como el R&B, el pop y el electrón con su propio toque
+              característico. Su álbum de estudio debut,
+              <i lang="en">"Kiss Land"</i> (2013), marcó el comienzo de una
+              carrera meteórica que lo llevaría a la cima de las listas de
+              éxitos y a ganar numerosos premios, incluidos múltiples premios
+              Grammy.
+            </p>
+          </div>
+          <div id="music-awards">
+            <h3 class="info-bio">Logros Musicales</h3>
+            <p class="paragraph">
+              The Weeknd ha alcanzado un éxito extraordinario a lo largo de su
+              carrera, estableciéndose como uno de los artistas más influyentes
+              y exitosos de la música contemporánea. Con numerosos álbumes
+              aclamados por la crítica y una serie de éxitos internacionales,
+              sus logros musicales son verdaderamente impresionantes. Ha ganado
+              múltiples premios Grammy, Billboard Music Awards, American Music
+              Awards, y ha sido reconocido tanto por su innovadora producción
+              como por su distintiva voz. Con hits como
+              <em lang="en">
+                "Blinding Lights", "Can't Feel My Face" y "Starboy"</em
+              >, The Weeknd ha dominado las listas de éxitos y ha cautivado a
+              millones de fans en todo el mundo.
+            </p>
+          </div>
+
+          <h4 id="spotify">
+            <span>113,529,518</span> oyentes mensuales en
+            <a
+              href="https://open.spotify.com/intl-es/artist/1Xyo4u8uXC1ZmMpatF05PJ"
+              target="_blank"
+              >Spotify</a
+            >.
+          </h4>
         </section>
       </div>
     </main>
-    <footer>
+    <footer id="media">
       <h2>Redes sociales:</h2>
-      <img src="resources/instagram.png" alt="logo de Instagram" />
-      <img src="resources/tik-tok.png" alt="logo de Tiktok" />
-      <img src="resources/youtube.png" alt="logo de Youtube" />
+      <a href="https://www.instagram.com/theweeknd/?hl=es" target="_blank"
+        ><img src="resources/instagram.png" alt="logo de Instagram"
+      /></a>
+      <a href="https://www.tiktok.com/@theweeknd?lang=es" target="_blank"
+        ><img src="resources/tik-tok.png" alt="logo de Tiktok"
+      /></a>
+      <a
+        href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ"
+        target="_blank"
+        ><img src="resources/youtube.png" alt="logo de Youtube"
+      /></a>
     </footer>
   </body>
 </html>
