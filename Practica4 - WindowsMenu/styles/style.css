@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf) format('TrueType');
+}
+
+:root {
+    --main: #180053;
+}
+
+body {
+    background-color: var(--main);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 10em;
+    font-family: 'OpenSans';
+    font-weight: 100;
+    color: #ddd;
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    img {
+        padding: 2px;
+        background-color: #464646;
+    }
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 200px) 100px 100px;
+    grid-template-rows: 100px 100px repeat(3, 200px);
+    justify-content: center;
+
+    .rectangle {
+        width: 400px;
+        height: 200px;
+    }
+
+    .square {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mini-square {
+        width: 100px;
+        height: 100px;
+    }
+
+    .big-rectangle {
+        height: 400px;
+        width: 400px;
+    }
+
+    #email {
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+        background-color: white;
+    }
+
+    #calendar {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        background-color: purple;
+    }
+
+    #photos {
+        grid-column: 5;
+        grid-row: 1 / 2;
+        background-color: blue;
+    }
+
+    #skype {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: cyan;
+    }
+
+    #video {
+        grid-column: 6;
+        grid-row: 1;
+        background-color: red;
+    }
+
+    #game {
+        grid-column: 6;
+        grid-row: 2;
+        background-color: orange;
+    }
+
+    #audio {
+        grid-column: 7;
+        grid-row: 1;
+        background-color: green;
+    }
+
+    #camera {
+        grid-column: 7;
+        grid-row: 2;
+        background-color: purple;
+    }
+
+    #nine {
+        grid-column: 2;
+        grid-row: 3;
+        background-color: orange;
+    }
+
+    #ten {
+        grid-column: 3;
+        grid-row: 3;
+        background-color: green;
+    }
+
+    #eleven {
+        grid-column: 5;
+        grid-row: 3;
+        background-color: blue;
+    }
+
+    #twelve {
+        grid-column: 6 / 7;
+        grid-row: 3;
+        background-color: green;
+    }
+
+    #thirteen {
+        grid-column: 1;
+        grid-row: 4;
+        background-color: magenta;
+    }
+
+    #fourteen {
+        grid-column: 2;
+        grid-row: 4;
+        background-color: cyan;
+    }
+
+    #fifteen {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+        background-color: gray;
+    }
+
+    #sixteen {
+        grid-column: 5 / 7;
+        grid-row: 4;
+        background-color: magenta;
+    }
+
+    #seventeen {
+        grid-column: 1 / 2;
+        grid-row: 5;
+        background-color: greenyellow;
+    }
+
+    #eighteen {
+        grid-column: 5 / 7;
+        grid-row: 5;
+        background-color: red;
+    }
+
+}
