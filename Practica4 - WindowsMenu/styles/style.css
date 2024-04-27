@@ -18,7 +18,8 @@
 
 
 body {
-    background-image: linear-gradient(to right, #082970 0%, #051755 19%, #051755 42%, #180153 70%, #082970 100%);
+    background-image: linear-gradient(to right top, #082970 0%, #00154C 20%, #082970 40%, #051755 55%, #082970 70%,#180153 85%, #082970 100%);
+    height: 100vh;
 }
 
 header {
@@ -45,14 +46,33 @@ header {
     }
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 .element {
     font-family: 'Montserrat-Regular';
     color: #FFF;
-    font-size: 0.9em;
+    font-size: 0.8em;
+}
+
+.basic-element {
+    display: grid;
+    grid-template-rows: 1fr 0.20fr;
+    padding: 5px;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+
+    img {
+        width: 70px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    h4 {
+        align-self: flex-start;
+    }
+
 }
 
 #container {
@@ -158,7 +178,6 @@ ul{
     #sports {
         grid-column: 5 / 8;
         grid-row: 4;
-        background: linear-gradient(to bottom right, #5234AE 0%, #643CBF 100%);
     }
 
     #desktop {
@@ -170,7 +189,6 @@ ul{
     #news {
         grid-column: 5 / 8;
         grid-row: 5;
-        background: linear-gradient(to bottom right, #8E325B 0%, #BE1F48 100%);
     }
 
     #game-list {
@@ -197,4 +215,164 @@ ul{
         background: linear-gradient(to bottom right, #C94A2F 0%, #DD582D 100%);
     }
 
+}
+
+.mini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sports {
+    display: grid;
+    background: url(../icons/sports.jpg);
+    background-size: cover;
+}
+
+#container-sports {
+    padding: 2px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background: linear-gradient(to bottom right, #5234AE 0%, #643CBF 100%);
+
+    img {
+        width: 30px;
+    }
+}
+
+#news {
+    display: grid;
+    background: url(../icons/news.webp);
+    background-size: cover;
+}
+
+#container-news {
+    padding: 2px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background: linear-gradient(to bottom right, #8E325B 0%, #BE1F48 100%);
+
+    img {
+        width: 30px;
+    }
+}
+
+#cripto {
+    display: grid;
+    padding: 5px;
+
+    img {
+        width: 30px;
+        align-self: flex-end;
+    }
+
+    p {
+        align-self: center;
+        justify-self: center;
+        font-size: 1.2em;
+    }
+}
+
+#desktop {
+    background: url(../icons/desktop.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+
+    h4 {
+        align-self: flex-end;
+    }
+}
+
+#food {
+    background: url(../icons/food-image.webp);
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+
+    img {
+        width: 30px;
+        align-self: flex-end;
+    }
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat-Thin';
+    background: url(../icons/weather.jpg);
+    background-size: cover;
+    padding: 5px;
+
+    h5 {
+        font-size: 5em;
+    }
+
+    h6 {
+        font-size: 2em;
+    }
+
+    p {
+        margin-top: 13px;
+        font-size: 0.9em;
+        font-family: 'Montserrat-Regular';
+    }
+
+    h4 {
+        margin-top: 25px;
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+}
+
+#game-list {
+    display: grid;
+    padding: 5px;
+
+    h4 {
+        font-family: 'Montserrat-Thin';
+        font-size: 2.2em;
+        align-self: flex-start;
+    }
+
+    #icon-games {
+        width: 30px;
+        justify-self: flex-start;
+        align-self: flex-end;
+    }
+
+    .image-games {
+        width: 40px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+            display: grid;
+            grid-template-columns: 30px auto;
+            grid-template-areas: 'image name' 'image description';
+            margin: 10px 0;
+            column-gap: 15px;
+
+            img {
+                grid-area: image;
+            }
+
+            h5 {
+                grid-area: name;
+                font-size: 1.1em;
+            }
+
+            p {
+                grid-area: description;
+            }
+        }
+    }
 }
