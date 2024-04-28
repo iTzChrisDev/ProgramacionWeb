@@ -18,7 +18,7 @@
 
 
 body {
-    background-image: linear-gradient(to right top, #082970 0%, #00154C 20%, #082970 40%, #051755 55%, #082970 70%,#180153 85%, #082970 100%);
+    background-image: linear-gradient(to right top, #082970 0%, #00154C 20%, #082970 40%, #051755 55%, #082970 70%,#180153 80%, #082970 100%);
     height: 100vh;
 }
 
@@ -77,8 +77,8 @@ ul {
 
 #container {
     display: grid;
-    grid-template-columns: repeat(5, 130px) repeat(2, 65px) repeat(2, 130px);
-    grid-template-rows: repeat(2, 65px) repeat(3, 130px);
+    grid-template-columns: repeat(5, 130px) repeat(2, 60px) repeat(2, 130px);
+    grid-template-rows: repeat(2, 60px) repeat(3, 130px);
     align-content: center;
     justify-content: center;
     height: 80vh;
