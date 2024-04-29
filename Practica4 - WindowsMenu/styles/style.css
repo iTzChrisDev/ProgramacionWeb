@@ -18,14 +18,14 @@
 
 
 body {
-    background-image: linear-gradient(to right top, #082970 0%, #00154C 20%, #082970 40%, #051755 55%, #082970 70%,#180153 80%, #082970 100%);
+    background-image: linear-gradient(to right top, #082970 0%, #00154C 20%, #082970 40%, #051755 55%, #082970 70%, #180153 80%, #082970 100%);
     height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-around;
-    padding: 2em 10em;
+    padding: 0.5em 10em 3em;
     font-family: 'Montserrat-Thin';
     font-weight: 100;
     color: #FFF;
@@ -77,11 +77,11 @@ ul {
 
 #container {
     display: grid;
-    grid-template-columns: repeat(5, 130px) repeat(2, 60px) repeat(2, 130px);
-    grid-template-rows: repeat(2, 60px) repeat(3, 130px);
+    grid-template-columns: repeat(5, 110px) repeat(2, 50px) repeat(2, 110px);
+    grid-template-rows: repeat(2, 50px) repeat(3, 110px);
     align-content: center;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
     gap: 10px;
 
     #email {
@@ -227,6 +227,10 @@ ul {
     display: grid;
     background: url(../icons/sports.jpg);
     background-size: cover;
+
+    h4 {
+        font-size: 0.8em;
+    }
 }
 
 #container-sports {
@@ -246,6 +250,10 @@ ul {
     display: grid;
     background: url(../icons/news.webp);
     background-size: cover;
+
+    h4 {
+        font-size: 0.8em;
+    }
 }
 
 #container-news {
@@ -273,7 +281,7 @@ ul {
     p {
         align-self: center;
         justify-self: center;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
 
@@ -301,8 +309,8 @@ ul {
 }
 
 #weather {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1.4fr 1fr repeat(2, 0.7fr) 0.5fr;
     font-family: 'Montserrat-Thin';
     background: url(../icons/weather.jpg);
     background-size: cover;
@@ -310,22 +318,25 @@ ul {
 
     h5 {
         font-size: 5em;
+        align-self: center;
+        text-shadow: 0 0 5px #444;
     }
 
     h6 {
         font-size: 2em;
+        align-self: center;
     }
 
     p {
-        margin-top: 13px;
+        align-self: center;
+        margin-top: 5px;
         font-size: 0.9em;
-        font-family: 'Montserrat-Regular';
     }
 
     h4 {
-        margin-top: 25px;
-        align-self: flex-start;
-        justify-self: flex-end;
+        font-family: 'Montserrat-Regular';
+        align-self: flex-end;
+        justify-self: flex-start;
     }
 }
 
@@ -335,7 +346,7 @@ ul {
 
     h4 {
         font-family: 'Montserrat-Thin';
-        font-size: 2.2em;
+        font-size: 2em;
         align-self: flex-start;
     }
 
@@ -346,7 +357,7 @@ ul {
     }
 
     .image-games {
-        width: 40px;
+        width: 30px;
     }
 
     ul {
@@ -358,7 +369,7 @@ ul {
             display: grid;
             grid-template-columns: 30px auto;
             grid-template-areas: 'image name' 'image description';
-            margin: 10px 0;
+            margin: 5px 0;
             column-gap: 15px;
 
             img {
