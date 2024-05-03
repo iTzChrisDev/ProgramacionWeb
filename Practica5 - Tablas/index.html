@@ -3,165 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tablas en HTML</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Tables</title>
   </head>
   <body>
-    <header>
-      <h1>Alumnos ITSF</h1>
-    </header>
-    <main>
-      <div id="table-data">
-        <table id="table-info">
-          <tr class="table-header">
-            <th>Num. Control</th>
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Edad</th>
-            <th>Sexo</th>
-            <th>Status</th>
-            <th>Foto</th>
+    <div class="container">
+      <div id="marvel-bg" class="title-container"><h2>Peliculas de marvel</h2></div>
+      <div class="marvel-container">
+        <table id="table-marvel">
+          <tr id="table-marvel-header">
+            <th>Título</th>
+            <th>Año</th>
+            <th>Género</th>
+            <th>Director</th>
+            <th>Calificación IMDB</th>
+            <th>Imagen</th>
           </tr>
-          <tr class="table-row line1">
-            <td>1</td>
-            <td>Christopher</td>
-            <td>Sarmiento Casillas</td>
-            <td>21</td>
-            <td>Masculino</td>
-            <td><img class="status" src="resources/check.svg" alt="" /></td>
-            <td><img class="profile" src="resources/image.jpeg" alt="" /></td>
+          <tr class="table-marvel-row">
+            <td>Iron Man 1</td>
+            <td>2008</td>
+            <td>Acción, Aventura, Ciencia ficción</td>
+            <td>Jon Favreau</td>
+            <td>8.2</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/ironman.png"
+                alt="Iron Man"
+              />
+            </td>
           </tr>
-          <tr class="table-row line2">
-            <td>1</td>
-            <td>Christopher</td>
-            <td>Sarmiento Casillas</td>
-            <td>21</td>
-            <td>Masculino</td>
-            <td><img class="status" src="resources/check.svg" alt="" /></td>
-            <td><img class="profile" src="resources/image.jpeg" alt="" /></td>
+          <tr class="table-marvel-row">
+            <td>Capitán America: Civil War</td>
+            <td>2016</td>
+            <td>Acción, Aventura, Ciencia ficción</td>
+            <td>Anthony Russo</td>
+            <td>8.4</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/capitan.png"
+                alt=""
+              />
+            </td>
           </tr>
-          <tr class="table-row line1">
-            <td>1</td>
-            <td>Christopher</td>
-            <td>Sarmiento Casillas</td>
-            <td>21</td>
-            <td>Masculino</td>
-            <td><img class="status" src="resources/check.svg" alt="" /></td>
-            <td><img class="profile" src="resources/image.jpeg" alt="" /></td>
+          <tr class="table-marvel-row">
+            <td>X-MEN</td>
+            <td>2000</td>
+            <td>Acción, Aventura, Comedia</td>
+            <td>Bryan Singer</td>
+            <td>8.0</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/xmen.png"
+                alt="Wolverine"
+              />
+            </td>
           </tr>
-          <tr class="table-row line2">
-            <td>1</td>
-            <td>Christopher</td>
-            <td>Sarmiento Casillas</td>
-            <td>21</td>
-            <td>Masculino</td>
-            <td><img class="status" src="resources/not.svg" alt=""/td></td>
-            <td><img class="profile" src="resources/image.jpeg" alt="" /></td>
+          <tr class="table-marvel-row">
+            <td>Black Panther</td>
+            <td>2018</td>
+            <td>Acción, Aventura, Ciencia ficción</td>
+            <td>Ryan Coogler</td>
+            <td>9.3</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/black.png"
+                alt="Black Panther"
+              />
+            </td>
           </tr>
-          <tr class="table-row line1">
-            <td>1</td>
-            <td>Christopher</td>
-            <td>Sarmiento Casillas</td>
-            <td>21</td>
-            <td>Masculino</td>
-            <td><img class="status" src="resources/check.svg" alt="" /></td>
-            <td><img class="profile" src="resources/image.jpeg" alt="" /></td>
+          <tr class="table-marvel-row">
+            <td>Spiderman: No Way Home</td>
+            <td>2021</td>
+            <td>Acción, Aventura, Comedia</td>
+            <td>Jon Watts</td>
+            <td>8.9</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/spiderman.png"
+                alt="Spiderman"
+              />
+            </td>
           </tr>
-          <tr class="table-row line2">
-            <td>1</td>
-            <td>Christopher</td>
-            <td>Sarmiento Casillas</td>
-            <td>21</td>
-            <td>Masculino</td>
-            <td><img class="status" src="resources/not.svg" alt=""/td></td>
-            <td><img class="profile" src="resources/image.jpeg" alt="" /></td>
+          <tr class="table-marvel-row">
+            <td>Spiderman: No Way Home</td>
+            <td>2021</td>
+            <td>Acción, Aventura, Comedia</td>
+            <td>Jon Watts</td>
+            <td>8.9</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/spiderman.png"
+                alt="Spiderman"
+              />
+            </td>
           </tr>
-        </table>
-      </div>
-      <div class="ajedrez">
-        <table>
-          <tr>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-          </tr>
-          <tr>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-          </tr>
-          <tr>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-          </tr>
-          <tr>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-          </tr>
-          <tr>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-          </tr>
-          <tr>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-          </tr>
-          <tr>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-          </tr>
-          <tr>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
-            <td class="white-box"></td>
-            <td class="black-box"></td>
+          <tr class="table-marvel-row">
+            <td>Spiderman: No Way Home</td>
+            <td>2021</td>
+            <td>Acción, Aventura, Comedia</td>
+            <td>Jon Watts</td>
+            <td>8.9</td>
+            <td>
+              <img
+                class="icon-marvel"
+                src="resources/marvel/spiderman.png"
+                alt="Spiderman"
+              />
+            </td>
           </tr>
         </table>
       </div>
-    </main>
+      <div id="chess-bg" class="title-container"><h2>Tablero de Ajedrez</h2></div>
+      <div class="chess-container">
+        <table id="chess-table">
+          <tr>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/black-chess-rook.png" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/black-chess-knight-alt.png" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/black-chess-alfil.png" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/black-chess-king.png" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/black-chess-queen.png" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/black-chess-alfil.png" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/black-chess-knight-alt.png" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/black-chess-rook.png" alt=""></td>
+          </tr>
+          <tr>
+            <td class="white-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/black-chess-pawn.png" alt=""></td>
+          </tr>
+          <tr>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+          </tr>
+          <tr>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+          </tr>
+          <tr>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+          </tr>
+          <tr>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+            <td class="white-box"></td>
+            <td class="black-box"></td>
+          </tr>
+          <tr>
+            <td class="black-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="black-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+            <td class="white-box"><img class="image-piece" src="resources/chess/white-chess-pawn-alt.svg" alt=""></td>
+          </tr>
+          <tr>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/white-chess-tower.svg" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/white-chess-knight.svg" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/white-chess-alfil.svg" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/white-chess-king.svg" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/white-chess-queen.svg" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/white-chess-alfil.svg" alt=""></td>
+            <td class="white-box piece"><img class="image-piece" src="resources/chess/white-chess-knight.svg" alt=""></td>
+            <td class="black-box piece"><img class="image-piece" src="resources/chess/white-chess-tower.svg" alt=""></td>
+          </tr>
+        </table>
+      </div>
+      <div id="schedule-bg" class="title-container"><h2>Horario Escolar</h2></div>
+      <div class="schedule-container"></div>
+    </div>
   </body>
 </html>

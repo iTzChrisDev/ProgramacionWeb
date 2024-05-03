@@ -5,68 +5,119 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #444;
+}
 
 header {
     padding: 1em 0;
     text-align: center;
 }
 
-table{
-    border: 2px solid #444;
-    
+table {
+
+    border-collapse: collapse;
 }
 
-main{
+/* Layout  */
+
+.container {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr auto 0.2fr 1fr;
+    justify-items: center;
+    row-gap: 1em;
+}
+
+.title-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1em;
+    justify-content: center;
+    color: white;
+    width: 100%;
 }
 
-.table-info {
+/* Estilo Marvel table */
+
+#marvel-bg {
+    background: url(./resources/marvel/marvel.jpeg);
+    background-size: cover;
+    background-position: right 45% bottom 55%;
+
+    h2 {
+        font-size: 2em;
+        text-shadow: 2px 5px 5px #333;
+        color: #eee;
+    }
+}
+
+#table-marvel {
+    border-radius: 10px;
+}
+
+.table-marvel-row>td {
+    padding: 5px 30px;
     text-align: center;
-    
 }
 
-.table-row > td {
-    text-align: center;
+#table-marvel-header>th {
+    background: linear-gradient(#02213E 0%, #0A7CC3 70%);
+    color: #fff;
+    padding: 10px;
 }
 
-th {
-    background-color: cornflowerblue;
-    padding: 5px 10px;
-}
-
-td {
-    padding: 5px 10px;
-}
-
-.line1 {
+tr:nth-child(even) {
     background-color: #ddd;
 }
 
-.line2 {
+tr:nth-child(odd) {
     background-color: #eee;
 }
 
-.profile {
-    width: 65px;
-    border-radius: 5px;
-    border: 1px solid #333;
+.icon-marvel {
+    width: 64px;
 }
 
-.status {
-    width: 30px;
+/* Estilo Chess table */
+#chess-bg {
+    background: url(./resources/chess/ajedrez.jpg);
+    background-size: cover;
+    background-position: right 35% bottom 65%;
+
+    h2 {
+        font-size: 2em;
+        text-shadow: 2px 5px 5px #333;
+        color: #eee;
+    }
+}
+
+#chess-table {
+    border: 1px solid #eee;
 }
 
 .black-box {
     width: 100px;
     height: 100px;
-    background: #222;
+    background: #555;
 }
 
 .white-box {
     width: 100px;
     height: 100px;
     background: #fff;
+}
+.image-piece {
+    width: 100px;
+}
+
+/* Estilo Schedule table */
+#schedule-bg {
+    background: url(./resources/schedule/escuela.jpg);
+    background-size: cover;
+    background-position: right 55% bottom 35%;
+
+    h2 {
+        font-size: 2em;
+        text-shadow: 2px 5px 5px #333;
+        color: #eee;
+    }
 }
