@@ -76,13 +76,13 @@ nav a {
 
 #form-tesla {
     font-family: 'Montserrat-Regular', 'Franklin Gothic Medium', Arial, sans-serif;
-    background: linear-gradient(145deg, rgba(182,182,182,0.3) 20%, rgba(100,108,125,0.3) 60%, rgba(61,69,85,0.2) 100%);
-    backdrop-filter: blur(6px);
+    background: linear-gradient(145deg, rgba(182, 182, 182, 0.3) 20%, rgba(100, 108, 125, 0.3) 60%, rgba(61, 69, 85, 0.2) 100%);
+    backdrop-filter: blur(8px);
     padding: 1.5em 2em;
     border-radius: 15px;
     display: grid;
     grid-template-rows: 1.7fr 1fr 1fr 0.2fr;
-    row-gap: 1.5em;
+    row-gap: 2em;
 }
 
 input {
@@ -91,10 +91,12 @@ input {
 
 label {
     font-size: 0.8em;
+    gap: 0.2em;
 }
 
 legend {
     font-weight: bold;
+    padding-bottom: 1em;
 }
 
 input[type="text"],
@@ -149,13 +151,135 @@ select option {
 }
 
 #personal-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'nombre profile'
+        'apellido profile'
+        'dir dir'
+        'genero telefono';
     gap: 0.3em;
 }
 
-#register-info {
+#profile-container {
+    display: grid;
+    align-content: center;
+    gap: 0.5em;
+    justify-items: center;
+    grid-area: profile;
+}
+
+#nombre-container {
     display: flex;
     flex-direction: column;
+    grid-area: nombre;
+    gap: 0.2em;
+}
+
+#ap-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: apellido;
+    gap: 0.2em;
+
+}
+
+#dir-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: dir;
+    gap: 0.2em;
+
+}
+
+#genero-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: genero;
+    gap: 0.2em;
+}
+
+#tel-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: telefono;
+    gap: 0.2em;
+}
+
+#register-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'mail mail'
+        'user pass';
     gap: 0.3em;
+}
+
+#mail-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: mail;
+    gap: 0.2em;
+}
+
+#user-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: user;
+    gap: 0.2em;
+}
+
+#pass-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: pass;
+    gap: 0.2em;
+}
+
+#auto-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'data details';
+    gap: 0.5em;
+}
+
+#data-container {
+    grid-area: data;
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    gap: 0.5em;
+}
+
+#color-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#date-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#hr-start-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#hr-end-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-car-container {
+    grid-area: details;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#model-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#mods-container {
+    display: flex;
+    flex-direction: column;
 }

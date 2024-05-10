@@ -20,92 +20,140 @@
     </header>
     <main>
       <div id="container">
-        <h2 id="title">
-          Formulario de registro para los nuevos modelos de Tesla
-        </h2>
+        <h2 id="title">Formulario de registro de Tesla</h2>
         <form id="form-tesla" action="">
           <fieldset id="personal-info">
             <legend>Información personal</legend>
-            <img id="profile-picture" src="resources/camera.svg" alt="" width="50px"/>
-            <input id="image" type="file" required />
+            <div id="profile-container">
+              <img
+                id="profile-picture"
+                src="resources/camera.svg"
+                alt=""
+                width="70px"
+              />
+              <input id="image" type="file" />
+            </div>
 
-            <label for="nombre">Nombre(s)</label>
-            <input id="nombre" type="text" required />
-
-            <label for="ap">Apellidos</label>
-            <input id="ap" type="text" required />
-
-            <label for="direccion">Dirección</label>
-            <input id="direccion" type="text" required />
-
-            <label for="genero">Género:</label>
-            <select id="genero" name="genero">
-              <option value="masculino">Masculino</option>
-              <option value="femenino">Femenino</option>
-              <option value="otro">Otro</option>
-            </select>
-
-            <label for="tel">Teléfono</label>
-            <input
-              id="tel"
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              autocomplete="off"
-              required
-            />
+            <div id="nombre-container">
+              <label for="nombre">Nombre(s)</label>
+              <input id="nombre" type="text" required />
+            </div>
+            <div id="ap-container">
+              <label for="ap">Apellidos</label>
+              <input id="ap" type="text" required />
+            </div>
+            <div id="dir-container">
+              <label for="direccion">Dirección</label>
+              <input id="direccion" type="text" required />
+            </div>
+            <div id="genero-container">
+              <label for="genero">Género:</label>
+              <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div id="tel-container">
+              <label for="tel">Teléfono</label>
+              <input
+                id="tel"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                autocomplete="off"
+                required
+              />
+            </div>
           </fieldset>
 
           <fieldset id="register-info">
             <legend>Información de registro</legend>
-            <label for="mail">Email</label>
-            <input id="mail" type="email" required />
+            <div id="mail-container">
+              <label for="mail">Email</label>
+              <input id="mail" type="email" required />
+            </div>
 
-            <label for="user">Nombre de usuario</label>
-            <input id="user" type="text" required />
+            <div id="user-container">
+              <label for="user">Nombre de usuario</label>
+              <input id="user" type="text" required />
+            </div>
 
-            <label for="pass">Contraseña</label>
-            <input id="pass" type="password" required />
+            <div id="pass-container">
+              <label for="pass">Contraseña</label>
+              <input id="pass" type="password" required />
+            </div>
           </fieldset>
 
           <fieldset id="auto-info">
             <legend>Detalles del auto</legend>
-            <label for="color">Color</label>
-            <input id="color" type="color" required />
+            <div id="data-container">
+              <div id="date-container">
+                <label for="date-received">Fecha de entrega</label>
+                <input id="date-received" type="date" required />
+              </div>
 
-            <label for="date-received">Fecha de entrega</label>
-            <input id="date-received" type="date" required />
+              <div id="hr-start-container">
+                <label for="hr-start">Hora Inicial</label>
+                <input id="hr-start" type="time" required />
+              </div>
 
-            <label for="hr-start">Hora Inicial</label>
-            <input id="hr-start" type="time" required />
+              <div id="hr-end-container">
+                <label for="hr-end">Hora Final</label>
+                <input id="hr-end" type="time" required />
+              </div>
 
-            <label for="hr-end">Hora Final</label>
-            <input id="hr-end" type="time" required />
+              <div id="color-container">
+                <label for="color">Color</label>
+                <input id="color" type="color" required />
+              </div>
+            </div>
 
-            <legend>Modelo</legend>
-            <input id="modelS" type="radio" name="model" />
-            <label for="modelS">Model S</label>
-            <input id="modelY" type="radio" name="model" />
-            <label for="modelY">Model Y</label>
-            <input id="modelX" type="radio" name="model" />
-            <label for="modelX">Model X</label>
-            <input id="model3" type="radio" name="model" />
-            <label for="model3">Model 3</label>
+            <div id="detail-car-container">
+              <div id="model-container">
+                <legend>Modelo</legend>
+                <div id="model-s">
+                  <input id="modelS" type="radio" name="model" checked />
+                  <label for="modelS">Model S</label>
+                </div>
+                <div id="model-y">
+                  <input id="modelY" type="radio" name="model" />
+                  <label for="modelY">Model Y</label>
+                </div>
+                <div id="model-x">
+                  <input id="modelX" type="radio" name="model" />
+                  <label for="modelX">Model X</label>
+                </div>
+                <div id="model-3">
+                  <input id="model3" type="radio" name="model" />
+                  <label for="model3">Model 3</label>
+                </div>
+              </div>
 
-            <legend>Modificaciones</legend>
-            <input id="interior" type="checkbox" />
-            <label for="interior">Interior Deluxe</label>
-            <input id="sonido" type="checkbox" />
-            <label for="sonido">Sistema de sonido</label>
-            <input id="servicio" type="checkbox" />
-            <label for="servicio">Servicio Star-Link</label>
-            <input id="carga" type="checkbox" />
-            <label for="carga">Carga Ultra-Rapida</label>
+              <div id="mods-container">
+                <legend>Modificaciones</legend>
+                <div id="interior-container">
+                  <input id="interior" type="checkbox" />
+                  <label for="interior">Interior Deluxe</label>
+                </div>
+                <div id="sonido-container">
+                  <input id="sonido" type="checkbox" />
+                  <label for="sonido">Sistema de sonido</label>
+                </div>
+                <div id="servicio-container">
+                  <input id="servicio" type="checkbox" />
+                  <label for="servicio">Servicio Star-Link</label>
+                </div>
+                <div id="carga-container">
+                  <input id="carga" type="checkbox" />
+                  <label for="carga">Carga Ultra-Rapida</label>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
-          <input type="submit" value="Send Request" />
+          <input type="submit" value="Enviar solicitud" />
         </form>
       </div>
     </main>
-    <footer></footer>
   </body>
 </html>
