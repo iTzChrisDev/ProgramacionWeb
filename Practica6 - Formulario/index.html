@@ -21,7 +21,7 @@
     <main>
       <div id="container">
         <h2 id="title">Formulario de registro de Tesla</h2>
-        <form id="form-tesla" action="">
+        <form id="form-tesla" method="GET" action="registrar.php">
           <fieldset id="personal-info">
             <legend>Información personal</legend>
             <div id="profile-container">
@@ -31,20 +31,20 @@
                 alt=""
                 width="70px"
               />
-              <input id="image" type="file" />
+              <input id="image" name="imagen" type="file" />
             </div>
 
             <div id="nombre-container">
               <label for="nombre">Nombre(s)</label>
-              <input id="nombre" type="text" required />
+              <input id="nombre" name="nombre" type="text" placeholder="Pedro" required />
             </div>
             <div id="ap-container">
               <label for="ap">Apellidos</label>
-              <input id="ap" type="text" required />
+              <input id="ap" name="apellidos" type="text" placeholder="Sanchez Perez" required />
             </div>
             <div id="dir-container">
               <label for="direccion">Dirección</label>
-              <input id="direccion" type="text" required />
+              <input id="direccion" name="direccion" type="text" placeholder="Calle Falsa #123" required />
             </div>
             <div id="genero-container">
               <label for="genero">Género:</label>
@@ -59,6 +59,8 @@
               <input
                 id="tel"
                 type="tel"
+                name="telefono"
+                placeholder="123-456-789"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 autocomplete="off"
                 required
@@ -70,17 +72,17 @@
             <legend>Información de registro</legend>
             <div id="mail-container">
               <label for="mail">Email</label>
-              <input id="mail" type="email" required />
+              <input id="mail" type="email" name="email" placeholder="prueba@domain.com" required />
             </div>
 
             <div id="user-container">
               <label for="user">Nombre de usuario</label>
-              <input id="user" type="text" required />
+              <input id="user" type="text" name="user" placeholder="username" required />
             </div>
 
             <div id="pass-container">
               <label for="pass">Contraseña</label>
-              <input id="pass" type="password" required />
+              <input id="pass" type="password" name="password" placeholder="password" required />
             </div>
           </fieldset>
 
@@ -89,22 +91,22 @@
             <div id="data-container">
               <div id="date-container">
                 <label for="date-received">Fecha de entrega</label>
-                <input id="date-received" type="date" required />
+                <input id="date-received" type="date" name="date" min="17/05/2024" required />
               </div>
 
               <div id="hr-start-container">
                 <label for="hr-start">Hora Inicial</label>
-                <input id="hr-start" type="time" required />
+                <input id="hr-start" type="time" name="start-hour" required />
               </div>
 
               <div id="hr-end-container">
                 <label for="hr-end">Hora Final</label>
-                <input id="hr-end" type="time" required />
+                <input id="hr-end" type="time" name="final-hour" required />
               </div>
 
               <div id="color-container">
                 <label for="color">Color</label>
-                <input id="color" type="color" required />
+                <input id="color" type="color" name="color" required />
               </div>
             </div>
 
@@ -132,26 +134,26 @@
               <div id="mods-container">
                 <legend>Modificaciones</legend>
                 <div id="interior-container">
-                  <input id="interior" type="checkbox" />
+                  <input id="interior" type="checkbox" name="modify-interior"/>
                   <label for="interior">Interior Deluxe</label>
                 </div>
                 <div id="sonido-container">
-                  <input id="sonido" type="checkbox" />
+                  <input id="sonido" type="checkbox" name="modify-sonido"/>
                   <label for="sonido">Sistema de sonido</label>
                 </div>
                 <div id="servicio-container">
-                  <input id="servicio" type="checkbox" />
+                  <input id="servicio" type="checkbox" name="modify-servicio"/>
                   <label for="servicio">Servicio Star-Link</label>
                 </div>
                 <div id="carga-container">
-                  <input id="carga" type="checkbox" />
+                  <input id="carga" type="checkbox" name="modify-carga"/>
                   <label for="carga">Carga Ultra-Rapida</label>
                 </div>
               </div>
             </div>
           </fieldset>
 
-          <input type="submit" value="Enviar solicitud" />
+          <input type="submit" name="submit" value="Enviar solicitud" />
         </form>
       </div>
     </main>
