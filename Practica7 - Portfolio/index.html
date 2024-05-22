@@ -1,11 +1,288 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio - Chris Sarmiento</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <!-- Debo agregar la funcion de mandar Email -->
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+    <main id="inicio">
+      <div class="container">
+        <section id="presentation">
+          <div id="profile-picture">
+            <img
+              src="resources/images/avatar.webp"
+              alt="Foto de perfil de Chris Sarmiento"
+            />
+          </div>
+          <h1>¡Hola!, soy Chris.</h1>
+          <p>
+            +4 años de experiencia en el área de programación.
+            <span>Estudiante de Ingeniería en Sistemas Computacionales</span>,
+            acutalmente me encuentro en proceso de convertirme en
+            <span>Desarrollador Fullstack.</span>
+          </p>
+          <div id="icons-container">
+            <a href="https://github.com/iTzChrisDev" target="_blank"
+              ><img src="resources/icons/github.svg" alt="Logo de Github"
+            /></a>
+            <a href="https://www.instagram.com/cg.sar20/" target="_blank"
+              ><img src="resources/icons/instagram.svg" alt="Logo de Instagram"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/chris-sarmiento-casillas/"
+              target="_blank"
+              ><img src="resources/icons/linkedin.svg" alt="Logo de LinkedIn"
+            /></a>
+            <a href="resources/documents/cv-template.pdf" download
+              ><img src="resources/icons/cv.svg" alt="Logo de CV"
+            /></a>
+          </div>
+        </section>
+      </div>
+      <div class="container-second">
+        <div class="title-container" id="experiencia">
+          <img
+            class="icon-img"
+            src="resources/icons/experiencia.svg"
+            alt="Icono de experience"
+          />
+          <h2>Experiencia</h2>
+        </div>
+        <section id="experience">
+          <article class="experience-item"></article>
+          <article class="experience-item"></article>
+        </section>
+      </div>
+      <div class="container-second">
+        <div class="title-container" id="proyectos">
+          <img
+            class="icon-img"
+            src="resources/icons/proyectos.svg"
+            alt="Icono de proyectos"
+          />
+          <h2>Proyectos</h2>
+        </div>
+        <section id="projects">
+          <article class="project">
+            <div class="img-container">
+              <img
+                src="resources/images/api-simpsons.png"
+                alt="Mockup del proyecto"
+              />
+            </div>
+            <h3>Titulo del proyecto</h3>
+            <div id="tech-used">
+              <!-- Tecnologias utilizadsa -->
+              <div id="java-tech">
+                <img src="resources/icons/java.svg" alt="Logo tecnologia" />
+                <p>Java</p>
+              </div>
+              <div id="mysql-tech">
+                <img src="resources/icons/mysql.svg" alt="Logo tecnologia" />
+                <p>MySQL</p>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati unde voluptates placeat libero animi magni nisi dolore
+              impedit reprehenderit, omnis ea ipsam voluptas, reiciendis aliquam
+              ab pariatur, nobis quaerat cum!
+            </p>
+            <div id="capsules">
+              <a class="capsule-link" href=""
+                ><img src="resources/icons/github.svg" alt="Logo" />Code</a
+              >
+              <a class="capsule-link" href=""
+                ><img src="resources/icons/preview.svg" alt="Logo" />Preview</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="img-container">
+              <img
+                src="resources/images/api-simpsons.png"
+                alt="Mockup del proyecto"
+              />
+            </div>
+            <h3>Titulo del proyecto</h3>
+            <div id="tech-used">
+              <!-- Tecnologias utilizadsa -->
+              <div id="java-tech">
+                <img src="resources/icons/java.svg" alt="Logo tecnologia" />
+                <p>Java</p>
+              </div>
+              <div id="mysql-tech">
+                <img src="resources/icons/mysql.svg" alt="Logo tecnologia" />
+                <p>MySQL</p>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati unde voluptates placeat libero animi magni nisi dolore
+              impedit reprehenderit, omnis ea ipsam voluptas, reiciendis aliquam
+              ab pariatur, nobis quaerat cum!
+            </p>
+            <div id="capsules">
+              <a class="capsule-link" href=""
+                ><img src="resources/icons/github.svg" alt="Logo" />Code</a
+              >
+              <a class="capsule-link" href=""
+                ><img src="resources/icons/preview.svg" alt="Logo" />Preview</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="img-container">
+              <img
+                src="resources/images/api-simpsons.png"
+                alt="Mockup del proyecto"
+              />
+            </div>
+            <h3>Titulo del proyecto</h3>
+            <div id="tech-used">
+              <!-- Tecnologias utilizadsa -->
+              <div id="java-tech">
+                <img src="resources/icons/java.svg" alt="Logo tecnologia" />
+                <p>Java</p>
+              </div>
+              <div id="mysql-tech">
+                <img src="resources/icons/mysql.svg" alt="Logo tecnologia" />
+                <p>MySQL</p>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati unde voluptates placeat libero animi magni nisi dolore
+              impedit reprehenderit, omnis ea ipsam voluptas, reiciendis aliquam
+              ab pariatur, nobis quaerat cum!
+            </p>
+            <div id="capsules">
+              <a class="capsule-link" href=""
+                ><img src="resources/icons/github.svg" alt="Logo" />Code</a
+              >
+              <a class="capsule-link" href=""
+                ><img src="resources/icons/preview.svg" alt="Logo" />Preview</a
+              >
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="container-second">
+        <div class="title-container" id="conocimientos">
+          <img
+            class="icon-img"
+            src="resources/icons/conocimientos.svg"
+            alt="Logo conocimientos"
+          />
+          <h2>Conocimientos</h2>
+        </div>
+        <section id="tech-stack">
+          <div class="tech-item">
+            <img src="resources/icons/java.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/python.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/c++.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/godot_engine.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/git.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/mysql.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/firebase.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/html5.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/css.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/javascript.svg" alt="" />
+          </div>
+          <div class="tech-item">
+            <img src="resources/icons/spring.svg" alt="" />
+          </div>
+        </section>
+      </div>
+      <!-- Añadir un apartado para Soft Skills -->
+      <div class="container-second">
+        <div class="title-container" id="sobre-mi">
+          <img
+            class="icon-img"
+            src="resources/icons/sobre-mi.svg"
+            alt="Logo acerca de mi"
+          />
+          <h2>Sobre mí</h2>
+        </div>
+        <section id="about-me">
+          <div id="descripcion-personal">
+            <p>
+              Mi nombre es Christopher, pero la mayoría me conoce como Chris.
+              Comencé a estudiar programación de manera constante desde la
+              preparatoria. Sin embargo, mi primer acercamiento al mundo de la
+              tecnología fue a los 12 años con una vieja computadora que había
+              en casa.
+              <span>
+                Actualmente, estudio una ingeniería relacionada con la
+                tecnología y la programación.</span
+              >
+            </p>
+            <p>
+              Algunas de mis experiencias incluyen participar en concursos de
+              programación en línea en OmegaUp y LeetCode. Además,
+              <span>
+                participé en la Coding Cup TECNM 2022 y formé parte del equipo
+                ganador del HackatecNM 2023 en su etapa regional.</span
+              >
+            </p>
+            <p>
+              Como desarrollador, he contribuido a proyectos públicos en GitHub
+              y
+              <span>
+                me he esforzado por innovar en mis proyectos personales</span
+              >, implementando mis ideas en diferentes ámbitos del mundo de la
+              programación.
+            </p>
+          </div>
+
+          <div id="image-about">
+            <img src="resources/images/profile.webp" alt="" />
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <span>© 2024 iTzChrisDev. Casi todos los derechos reservados xD</span>
+        <a href="">Contacto</a>
+      </div>
+    </footer>
+  </body>
 </html>
