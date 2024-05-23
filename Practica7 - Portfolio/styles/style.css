@@ -40,7 +40,7 @@ nav {
     }
 
     a:hover {
-        color: #F5C916;
+        color: #FACC15;
     }
 }
 
@@ -59,10 +59,11 @@ main {
 
 .container {
     display: flex;
-    height: 100vh;
-    padding-top: 5em;
+    height: 90vh;
+    /* padding-top: 5em; */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .title-container {
@@ -100,7 +101,7 @@ main {
         justify-content: center;
 
         img {
-            width: 150px;
+            width: 250px;
             border-radius: 50%;
             border: 1px solid #2fcdb8;
         }
@@ -114,7 +115,7 @@ main {
         font-size: 3rem;
 
         span {
-            color: #F5C916;
+            color: #FACC15;
         }
     }
 
@@ -127,7 +128,7 @@ main {
 
         span {
             font-weight: 500;
-            color: #F5C916;
+            color: #FACC15;
         }
     }
 
@@ -170,12 +171,89 @@ main {
     grid-template-areas: 'title' 'contenido';
 }
 
+
 #experience {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    position: relative;
+    column-gap: 10px;
+    grid-template-areas: 'point1 trabajo1'
+        'point2 trabajo2';
+    row-gap: 2em;
     grid-area: contenido;
     max-width: 800px;
     font-family: "Onest", sans-serif;
     color: #eee;
+
+    .line {
+        position: absolute;
+        height: 100%;
+        margin-left: 6px;
+        width: 2px;
+        background-color: #1F2937;
+    }
+
+    .point {
+        z-index: 2;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #FACC15;
+    }
+
+    #point1 {
+        grid-area: point1;
+        align-self: center;
+    }
+
+    #trabajo1 {
+        grid-area: trabajo1;
+    }
+
+    #point2 {
+        grid-area: point2;
+        align-self: center;
+    }
+
+    #trabajo2 {
+        grid-area: trabajo2;
+    }
+
+    .trabajo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1em;
+        grid-template-areas: 'titulo descripcion'
+            'empresa descripcion'
+            'fecha descripcion';
+        padding: 20px;
+
+        .titulo {
+            grid-area: titulo;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #FACC15;
+        }
+
+        .empresa {
+            grid-area: empresa;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .fecha {
+            grid-area: fecha;
+            color: #ccc;
+        }
+
+        .descripcion {
+            grid-area: descripcion;
+            color: #ccc;
+            align-self: center;
+        }
+    }
 }
+
 
 #projects {
     display: flex;
@@ -329,11 +407,17 @@ main {
         box-shadow: 0 0 3px 0 #eeeeee26;
         border-radius: 30px;
         backdrop-filter: blur(12px);
+        transition: transform 0.3s ease, filter 0.3s ease;
 
         img {
             width: 100%;
             height: 100%;
         }
+    }
+
+    .tech-item:hover {
+        transform: scale(1.07);
+        filter: brightness(0.8);
     }
 }
 
@@ -376,7 +460,7 @@ main {
 
             span {
                 font-weight: 500;
-                color: #F5C916;
+                color: #FACC15;
             }
         }
     }
@@ -404,10 +488,15 @@ footer {
     }
 
     a:hover {
-        color: #F5C916;
+        color: #FACC15;
     }
 
     span {
         color: #aaa;
     }
 }
+
+/* Gradiente bajo la imagen */
+/* img {
+    mask-image: linear-gradient(black 80%, transparent);
+} */
