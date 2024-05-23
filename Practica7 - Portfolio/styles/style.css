@@ -54,12 +54,13 @@ h2 {
 main {
     display: flex;
     flex-direction: column;
-    row-gap: 3em;
+    row-gap: 4em;
 }
 
 .container {
     display: flex;
-    padding-top: 4em;
+    height: 100vh;
+    padding-top: 5em;
     flex-direction: column;
     align-items: center;
 }
@@ -71,6 +72,16 @@ main {
     column-gap: 10px;
     align-items: center;
 }
+
+/* @keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+} */
 
 #presentation {
     display: grid;
@@ -101,6 +112,10 @@ main {
         font-family: "Onest", sans-serif;
         font-weight: 700;
         font-size: 3rem;
+
+        span {
+            color: #F5C916;
+        }
     }
 
     p {
@@ -295,6 +310,7 @@ main {
 
 #tech-stack {
     grid-area: contenido;
+    justify-content: center;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
