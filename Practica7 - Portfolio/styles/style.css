@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Onest';
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../resources/fonts/Onest-VariableFont_wght.ttf") format('truetype');   
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,8 +16,11 @@ html {
 }
 
 body {
-    background: rgb(15, 18, 37);
-    background: linear-gradient(-130deg, #1d203b 20%, #060f27 40%, #060c22 60%, #181B33 80%, #040e36 100%);
+    background: url("../resources/images/circle.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: rgb(15, 18, 37);
+    background: linear-gradient(-130deg, #1d203b 20%, #060f27 40%, #060c22 60%, #181B33 80%, #040e36 100%); */
     /* background: radial-gradient(circle, rgba(28, 31, 56, 1) 50%, rgb(12, 15, 32) 100%); */
 }
 
@@ -52,15 +62,13 @@ h2 {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     row-gap: 4em;
 }
 
 .container {
     display: flex;
-    height: 90vh;
-    /* padding-top: 5em; */
+    padding-top: 5em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -281,7 +289,7 @@ main {
 
             #java-tech {
                 display: inline-flex;
-                background: #dbcaba;
+                background: #dfdfdf;
                 border-radius: 50px;
                 padding: 5px 10px;
                 align-items: center;
@@ -294,13 +302,13 @@ main {
                 p {
                     font-weight: 500;
                     font-size: 0.8rem;
-                    color: #CD6403;
+                    color: #3b3b3b;
                 }
             }
 
             #mysql-tech {
                 display: inline-flex;
-                background: #02a3cb;
+                background: #00b6e3;
                 border-radius: 50px;
                 padding: 5px;
                 align-items: center;
@@ -313,7 +321,7 @@ main {
                 p {
                     font-weight: 500;
                     font-size: 0.8rem;
-                    color: #074557;
+                    color: #3b3b3b;
                 }
             }
 
@@ -417,6 +425,71 @@ main {
 
     .tech-item:hover {
         transform: scale(1.07);
+        filter: brightness(0.8);
+    }
+}
+
+#habilidades-section {
+    grid-area: contenido;
+    justify-content: center;
+    display: flex;
+    width: 800px;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    font-family: "Onest", sans-serif;
+    color: #eee;
+
+    .skill-item {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+        box-shadow: 0 0 3px 0 #eeeeee26;
+        border-radius: 10px;
+        backdrop-filter: blur(12px);
+        transition: transform 0.3s ease, filter 0.3s ease;
+
+        h3 {
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        img {
+            width: 60px;
+        }
+    }
+
+    .skill-item:nth-child(1) {
+        background: linear-gradient(120deg, #375699 40%, #607ebf 100%);
+    }
+
+    .skill-item:nth-child(2) {
+        background: linear-gradient(120deg, #0095a9 40%, #00a8be 100%);
+    }
+
+    .skill-item:nth-child(3) {
+        background: linear-gradient(120deg, #FF7043 40%, #f3815e 100%);
+    }
+
+    .skill-item:nth-child(4) {
+        background: linear-gradient(120deg, #4CAF50 40%, #5cb45e 100%);
+    }
+
+    .skill-item:nth-child(5) {
+        background: linear-gradient(120deg, #bdb034 40%, #ccc373 100%);
+    }
+
+    .skill-item:nth-child(6) {
+        background: linear-gradient(120deg, #8E24AA 40%, #ac48c7 100%);
+    }
+
+    .skill-item:hover {
+        transform: scale(1.05);
         filter: brightness(0.8);
     }
 }
