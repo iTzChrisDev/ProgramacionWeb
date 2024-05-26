@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio - Chris Sarmiento</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="resources/icons/python.svg" />
   </head>
   <body>
     <header>
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#education">Educación</a>
         <a href="#conocimientos">Conocimientos</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </header>
     <main id="inicio">
@@ -86,6 +89,48 @@
         </section>
       </div>
       <div class="container-second">
+        <div class="title-container" id="education">
+          <img
+            class="icon-img"
+            src="resources/icons/education.svg"
+            alt="Icono de education"
+          />
+          <h2>Educación</h2>
+        </div>
+        <section id="education-section">
+          <article class="edu-item">
+            <h2 class="titulo">Ingenieria en Sistemas Computacionales</h2>
+            <p class="lugar">ITSF</p>
+            <p class="fecha">2021 - Actualidad</p>
+          </article>
+          <article class="edu-item">
+            <h2 class="titulo">Responsive Web Design</h2>
+            <p class="lugar">Free Code Camp</p>
+            <p class="fecha">2024</p>
+          </article>
+          <article class="edu-item">
+            <h2 class="titulo">Python</h2>
+            <p class="lugar">learnpython.org</p>
+            <p class="fecha">2023</p>
+          </article>
+          <article class="edu-item">
+            <h2 class="titulo">Relational Database</h2>
+            <p class="lugar">Free Code Camp</p>
+            <p class="fecha">2022</p>
+          </article>
+          <article class="edu-item">
+            <h2 class="titulo">Universidad Java</h2>
+            <p class="lugar">Udemy</p>
+            <p class="fecha">2021</p>
+          </article>
+          <article class="edu-item">
+            <h2 class="titulo">Técnico en programacion</h2>
+            <p class="lugar">CBTis #1</p>
+            <p class="fecha">2020</p>
+          </article>
+        </section>
+      </div>
+      <div class="container-second">
         <div class="title-container" id="conocimientos">
           <img
             class="icon-img"
@@ -97,7 +142,7 @@
         <section id="habilidades-section">
           <article class="skill-item">
             <img src="resources/icons/lang.svg" alt="" />
-            <h3>Ingles A2</h3>
+            <h3>Ingles B1</h3>
           </article>
           <article class="skill-item">
             <img src="resources/icons/time.svg" alt="" />
@@ -328,11 +373,58 @@
           </div>
         </section>
       </div>
+
+      <div class="container-second">
+        <div class="title-container" id="contact">
+          <img
+            class="icon-img"
+            src="resources/icons/contact.svg"
+            alt="Logo acerca de mi"
+          />
+          <h2>Contactame</h2>
+        </div>
+        <div id="container-form">
+          <div id="image-profile-container">
+            <img
+              id="picture"
+              src="resources/images/avatar.webp"
+              alt="profile-picture"
+            />
+            <div class="item-contact">
+              <img src="resources/icons/email.svg" alt="email-icon" />
+              <h4>csarmiento_dev@gmail.com</h4>
+            </div>
+            <div class="item-contact">
+              <img src="resources/icons/linkedin.svg" alt="linkedin-icon" />
+              <h4>chris-sarmiento-casillas</h4>
+            </div>
+            <div class="item-contact">
+              <img src="resources/icons/instagram.svg" alt="ig-icon" />
+              <h4>@cg.sar</h4>
+            </div>
+          </div>
+          <form action="">
+            <div class="text">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="name" type="text" />
+            </div>
+            <div class="text">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="text" />
+            </div>
+            <div class="area">
+              <label for="message">Mensaje</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <input type="submit" value="Enviar mensaje" />
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="container-footer">
         <span>© 2024 iTzChrisDev. Casi todos los derechos reservados xD</span>
-        <a href="">Contacto</a>
+        <a href="#inicio">Volver</a>
       </div>
     </footer>
     <script src="script.js"></script>
