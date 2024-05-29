@@ -773,7 +773,9 @@ footer {
     }
 }
 
-
+#tech-title{
+    padding-top: 0;
+}
 
 /* Gradiente bajo la imagen */
 /* img {
