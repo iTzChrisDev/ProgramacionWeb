@@ -19,9 +19,6 @@ body {
     background: url("../resources/images/circle.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background: rgb(15, 18, 37);
-    background: linear-gradient(-130deg, #1d203b 20%, #060f27 40%, #060c22 60%, #181B33 80%, #040e36 100%); */
-    /* background: radial-gradient(circle, rgba(28, 31, 56, 1) 50%, rgb(12, 15, 32) 100%); */
 }
 
 header {
@@ -75,22 +72,12 @@ main {
 }
 
 .title-container {
-    padding-top: 4em;
+    padding-top: 3.5em;
     grid-area: title;
     display: inline-flex;
     column-gap: 10px;
     align-items: center;
 }
-
-/* @keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-} */
 
 #presentation {
     display: grid;
@@ -311,26 +298,38 @@ input[type="submit"]:hover {
 
 .edu-item {
     display: grid;
-    text-align: center;
-    place-items: center;
-    background-color: #1F2937;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 1em;
+    grid-template-areas: 'img title' 'img lugar' 'img fecha';
+    background: linear-gradient(120deg, #1c20358d 20%, #1f2937b5 100%);
+    box-shadow: 0 0 3px 0 #eeeeee26;
     padding: 10px;
     border-radius: 10px;
     font-family: "Onest", sans-serif;
 
+    img {
+        justify-self: center;
+        grid-area: img;
+        width: 60px;
+    }
+
     .titulo {
+        grid-area: title;
         font-size: 1.5em;
         font-weight: 600;
         color: #FACC15;
     }
 
     .lugar {
+        grid-area: lugar;
         font-size: 1.5em;
         font-weight: 600;
         color: #eee;
     }
 
     .fecha {
+        grid-area: fecha;
         color: #ccc;
     }
 }
@@ -610,12 +609,12 @@ input[type="submit"]:hover {
         transition: transform 0.3s ease, filter 0.3s ease;
 
         h3 {
-            font-size: 1em;
+            font-size: 0.9em;
             font-weight: 500;
         }
 
         img {
-            width: 60px;
+            width: 40px;
         }
     }
 
@@ -645,7 +644,7 @@ input[type="submit"]:hover {
 
     .skill-item:hover {
         transform: scale(1.05);
-        filter: brightness(0.8);
+        filter: brightness(0.9);
     }
 }
 

@@ -16,27 +16,44 @@ table {
 
 /* Layout  */
 
-.container {
-    display: grid;
-    grid-template-rows: 0.2fr 1fr 0.2fr auto 0.2fr 1fr;
-    justify-items: center;
-    row-gap: 1em;
-}
-
 .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    padding-top: 1em;
+    padding-bottom: 4em;
     width: 100%;
 }
 
 /* Estilo Marvel table */
+.marvel-container {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.marvel-container-main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 30px;
+    padding-bottom: 20px;
+    height: 100vh;
+}
+
+.marvel-container-main:nth-child(1) {
+    background: #001A35;
+}
+
+.marvel-container-main:nth-child(2) {
+    background: #202020;
+}
 
 #marvel-bg {
     background: url(./resources/marvel/marvel.jpeg);
     background-size: cover;
-    background-position: right 45% bottom 55%;
+    background-position: right 35% bottom 80%;
+    mask-image: linear-gradient(#001A35 70%, transparent);
 
     h2 {
         font-size: 2em;
@@ -73,6 +90,7 @@ tr:nth-child(odd) {
     background: url(./resources/chess/ajedrez.jpg);
     background-size: cover;
     background-position: right 35% bottom 65%;
+    mask-image: linear-gradient(black 70%, transparent);
 
     h2 {
         font-size: 2em;
@@ -81,93 +99,24 @@ tr:nth-child(odd) {
     }
 }
 
-#chess-table {
-    border: 1px solid #eee;
+.chess-container {
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
 
 .black-box {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background: #333;
 }
 
 .white-box {
-    width: 100px;
-    height: 100px;
-    background: #ddd;
+    width: 90px;
+    height: 90px;
+    background: #b2b2b2;
 }
 
 .image-piece {
-    width: 100px;
-}
-
-/* Estilo Schedule table */
-#schedule-bg {
-    background: url(./resources/schedule/escuela.jpg);
-    background-size: cover;
-    background-position: right 55% bottom 35%;
-
-    h2 {
-        font-size: 2em;
-        text-shadow: 2px 5px 5px #333;
-        color: #eee;
-    }
-}
-
-#schedule-table {
-    border-collapse: separate;
-    border-spacing: 5px;
-}
-
-#table-schedul-header>th {
-    padding: 15px 5px;
-    background-color: #A6A6A6;
-    border-radius: 20px;
-}
-
-.day {
-    width: 18%;
-}
-
-.hour {
-    height: 10%;
-}
-
-.table-schedule-row>td {
-    padding: 15px 5px;
-    text-align: center;
-    text-wrap: wrap;
-    border-radius: 20px;
-}
-
-.schedule-hour {
-    background-color: #A6A6A6;
-}
-
-.graficacion {
-    background-color: #E39E36;
-}
-
-.leng-aut {
-    background-color: #00BF62;
-}
-
-.leng-int {
-    background-color: #FF5757;
-}
-
-.admin-bd {
-    background-color: #F6D65B;
-}
-
-.redes {
-    background-color: #29B1B1;
-}
-
-.prog-web {
-    background-color: #127CEA;
-}
-
-.ing-soft {
-    background-color: #8466D8;
+    width: 90px;
 }

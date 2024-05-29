@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Horario</title>
+  </head>
+  <body>
+    <main>
+      <div id="schedule-bg" class="title-container">
+        <h2>Horario Escolar</h2>
+      </div>
+      <div class="schedule-container">
+        <table id="schedule-table">
+          <tr id="table-schedul-header">
+            <th class="schedule-header hour">Hora</th>
+            <th class="schedule-header day">Lunes</th>
+            <th class="schedule-header day">Martes</th>
+            <th class="schedule-header day">Miercoles</th>
+            <th class="schedule-header day">Jueves</th>
+            <th class="schedule-header day">Viernes</th>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">7:00 - 8:00</td>
+            <td class="graficacion" colspan="4">Graficación</td>
+            <td class="empty">-</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">8:00 - 9:00</td>
+            <td class="leng-aut" rowspan="2" colspan="2">
+              Lenguajes y Automatas
+            </td>
+            <td class="leng-int" rowspan="2" colspan="2">
+              Lenguajes de Interfaz
+            </td>
+            <td class="admin-bd" rowspan="2">
+              Administracion de base de datos
+            </td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">9:00 - 10:00</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">10:00 - 11:00</td>
+            <td class="empty">-</td>
+            <td class="redes" rowspan="2">Redes de computadoras</td>
+            <td class="prog-web" rowspan="2">Programación web</td>
+            <td class="empty">-</td>
+            <td class="prog-web">Programación web</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">11:00 - 12:00</td>
+            <td class="ing-soft" rowspan="2">Ingenieria de Software</td>
+            <td class="ing-soft">Ingenieria de Software</td>
+            <td class="empty">-</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">12:00 - 13:00</td>
+            <td class="admin-bd" rowspan="2">
+              Administracion de base de datos
+            </td>
+            <td class="empty">-</td>
+            <td class="prog-web" rowspan="2">Programación web</td>
+            <td class="redes" rowspan="3">Redes de computadoras</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">13:00 - 14:00</td>
+            <td class="empty">-</td>
+            <td class="admin-bd">Admin. de base de datos</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">14:00 - 15:00</td>
+            <td class="empty">-</td>
+            <td class="ing-soft" colspan="2">Ingenieria de Software</td>
+            <td class="empty">-</td>
+          </tr>
+
+          <tr class="table-schedule-row">
+            <td class="schedule-hour hour">15:00 - 16:00</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+            <td class="empty">-</td>
+            <td class="leng-aut">Lenguajes y Automatas</td>
+            <td class="empty">-</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

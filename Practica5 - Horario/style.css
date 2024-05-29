@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    background: rgb(15, 18, 37);
+    background: linear-gradient(-130deg, #1d203b 20%, #060f27 40%, #060c22 60%, #181B33 80%, #040e36 100%);
+}
+
+#schedule-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+
+    h2 {
+        font-size: 3em;
+        text-shadow: 2px 5px 5px #333;
+        color: #eee;
+    }
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#schedule-table {
+    background: #30436d6b;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+#table-schedul-header>th {
+    padding: 15px 5px;
+    background-color: #A6A6A6;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.day {
+    width: 18%;
+}
+
+.hour {
+    height: 10%;
+}
+
+.empty {
+    color: #eee;
+}
+
+.table-schedule-row>td {
+    padding: 15px 5px;
+    text-align: center;
+    text-wrap: wrap;
+    border-radius: 20px;
+}
+
+.schedule-hour {
+    background-color: #A6A6A6;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.graficacion {
+    background-color: #E39E36;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.leng-aut {
+    background-color: #00BF62;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.leng-int {
+    background-color: #FF5757;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.admin-bd {
+    background-color: #F6D65B;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.redes {
+    background-color: #29B1B1;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.prog-web {
+    background-color: #127CEA;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.ing-soft {
+    background-color: #8466D8;
+    box-shadow: 1px 1px 3px 1px #000000;
+}

@@ -2,10 +2,12 @@ const nameSpan = document.getElementById("name");
 let index = 0;
 
 const frases = [
-  "Chris.",
-  "Developer.",
-  "Ingenioso.",
-  "Programador."
+  "Christopher.",
+  "ingeniero en proceso.",
+  "programador.",
+  "curioso.",
+  "colaborador.",
+  "proactivo."
 ];
 
 function typePhrase(phrase, callback) {
@@ -31,7 +33,7 @@ function startTyping() {
         index = 0;
       }
       startTyping();
-    }, 1500); 
+    }, 1000); 
   });
 }
 
